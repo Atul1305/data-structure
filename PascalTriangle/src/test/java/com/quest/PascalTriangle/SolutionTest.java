@@ -36,4 +36,28 @@ public class SolutionTest
         System.out.println(result);
     	assertTrue( true );
     }
+    
+    /**
+     * Rigorous Test :-)
+     */
+    @Test
+    public void shouldAnswerWithTrue2()
+    {
+        Solution solution = new Solution();
+        List<List<Integer>> result = solution.generate(0);
+        System.out.println(result);
+    	assertTrue( true );
+    }
+    
+    /**
+     * Rigorous Test :-)
+     */
+    @Test
+    public void shouldAnswerWithTrue3()
+    {
+        Solution solution = new Solution();
+        List<List<Integer>> result = solution.generate(1);
+        System.out.println(result);
+    	assertTrue( true );
+    }
 }
