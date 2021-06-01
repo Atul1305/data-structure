@@ -10,7 +10,7 @@ This repository holds solution of problems asked in java interview under data-st
 
 ## Problems
 1. match paranthesis to check a well formed expression.
-2. Find the minimum element in a stack in constant time.
+2. Find the minimum element in a stack in constant time. (use two stacks on every element push, push mimimum in second stack.)
 
 # Queue
 
