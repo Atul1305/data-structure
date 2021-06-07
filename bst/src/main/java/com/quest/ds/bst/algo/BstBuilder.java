@@ -27,15 +27,15 @@ public class BstBuilder {
 		return bstTree;
 	}
 
-	private void addNode(Node currentNode, Node node) {
-		traverse(currentNode, node);
+	private void addNode(Node root, Node node) {
+		traverse(root, node);
 	}
 
 	private void traverse(Node currentNode, Node node) {
 		if (currentNode.val > node.val) {
 			if (currentNode.leftChild == null) {
 				currentNode.leftChild = node;
-				System.out.println("Left Child assigned: " + currentNode);
+				// System.out.println("Left Child assigned: " + currentNode);
 				return;
 			} else {
 				traverse(currentNode.leftChild, node);
@@ -45,7 +45,7 @@ public class BstBuilder {
 		if (currentNode.val < node.val) {
 			if (currentNode.rightChild == null) {
 				currentNode.rightChild = node;
-				System.out.println("Right Child assigned: " + currentNode);
+				// System.out.println("Right Child assigned: " + currentNode);
 				return;
 			}else {
 				traverse(currentNode.rightChild, node);

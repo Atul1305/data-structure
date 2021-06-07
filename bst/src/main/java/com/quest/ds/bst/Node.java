@@ -3,11 +3,13 @@ package com.quest.ds.bst;
 public class Node {
 	
 	public final Integer val;
+	public Integer height;
 	public Node rightChild;
 	public Node leftChild;
 	
 	public Node(Integer val) {
 		this.val = val;
+		this.height = 1;
 	}
 	
 	@Override
